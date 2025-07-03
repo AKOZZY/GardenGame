@@ -7,7 +7,7 @@ Entity::Entity()
 
 void Entity::Draw()
 {
-	DrawTexture(sprite_dropShadow, position.x, position.y + 5, Color{ 255, 255, 255, 100 });
+	DrawTexture(sprite_dropShadow, position.x - width / 2, (position.y - height / 2) + 20, Color{ 255, 255, 255, 100 });
 	DrawRectangle(position.x - width / 2, position.y - height / 2, width, height, WHITE);
 	DrawCircle(position.x, position.y, 5, RED);
 }
